@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dropdown.css">
+    <title >Homepage</title>
+
+</head>
+<style>
+    .top-black{
+        width: 100vw;
+        height: auto;
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        margin-top: -2px;
+        
+
+    }
+
+    span{
+        position: absolute;
+        top: 20%;
+        right: 3%;
+        font-size: 2rem;
+
+    }
+    .navBar{
+        background-color: rgb(243, 243, 243);
+        position: fixed;
+        top: 50px;
+        width: 100vw;
+        height: auto;
+        border: 0px solid red;
+        display: flex;
+       
+    }
+    .navBar>div:first-child{
+        display: flex;
+        width: 60%;
+        border: 0px solid red;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .navBar>div>img{
+        width: 20%;
+        height: auto;
+        margin: 0px 20px;
+        margin-top: 10px;
+    }
+    input[type="text"]{
+        width: 100%;
+        border-radius: 40px 0px 0px 40px;
+        padding-left: 20px;
+        border: 0px;
+    }
+    button{
+        width: 30%;
+        border: 0px;
+        background-color: black;
+        color: white;
+        border-radius: 0px 40px 40px 0px;
+        font-family: sans-serif;
+    }
+    .navBar>div+div{
+        border: 0px solid red;
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .navBar>div+div>div:first-child,.navBar>div+div>div:last-child{
+        border: 0px solid blue;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        
+    }
+    .navBar>div+div>div:last-child>img,.navBar>div+div>div:last-child>p,i{
+        width: 12%;
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    a{
+        color: black;
+    }
+    .below_nav{
+        display: flex;
+        width: 100rem;
+        border: 0px solid red;
+        height: auto;
+        position: fixed;
+        top: 150px;
+
+    }
+    .below_nav p{
+        margin-left: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.9rem;
+        color: rgb(60, 60, 60);
+        padding-top: 10px;
+    }
+    .below_nav p:hover{
+        color: grey;
+    }
+    
+    
+</style>
+<body>
+    <div class="top-black"><p>Get a BB cream and Glitter pouch on a spend of Rs.799</p><span class="closeBtn">
+        &times;</span></div>
+    <div class="navBar">
+        <div>
+            <img src="https://media.sugarcosmetics.com/upload/Logo-static.jpg" alt="logo">
+            <input type="text" placeholder="Try ''Liquid Lipstick''"><button>Search</button>
+        </div>
+        <div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/person.png" alt="">
+                <a href="">Login/Register</a>
+            </div>
+            <div>
+                <p>&hearts;</p>
+                <i class="fa fa-shopping-bag"></i>
+                <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="below_nav">
+        <div class="dropdown">
+            <p>MAKEUP</p>
+            <div class="dropdown-content">
+                <a href="">LIPS</a>
+                <a href="">FACE</a>
+                <a href="">EYES</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <p>BRUSHES</p>
+            <div class="dropdown-content">
+                <a href="">FACE BRUSHES</a>
+                <a href="">EYE BRUSHES</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <p>SKINCARE</p>
+            <div class="dropdown-content">
+                <a href="">MOISTURIZERS</a>
+                <a href="">SUNSCREEN</a>
+                <a href="">SETTING MISTS</a>
+                <a href="">COFFEE CULTURE RANGE</a>
+                <a href="">SHEET MASK COMBO</a>
+                <a href="">CITRUS GOT REAL RANGE</a>
+                <a href="">AQUAHOLIC RANGE</a>
+                <a href="">MASKS</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <p>TREDING</p>
+            <div class="dropdown-content">
+                <a href="#">SUGAR MERCH STATION </a>
+                <a href="#">MAKEUP KITS</a>
+                <a href="#">BEST SELLERS</a>
+                <a href="">SUGAR SETS</a>
+                <a href="">VALUE SETS</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <p>BLOG</p>
+            <div class="dropdown-content">
+                <a href="">FEATURED</a>
+                <a href="">MAKEUP</a>
+                <a href="">SKINCARE</a>
+              </div>
+        </div>
+            <p>OFFERS</p>
+            <p>STORES</p>
+            
+        
+    </div>
+</body>
+</html>
+
+<script>
+    let closeBtn=document.querySelector(".closeBtn");
+    closeBtn.addEventListener("click",function (){
+        this.parentElement.style.display='none';
+    })
+</script>
