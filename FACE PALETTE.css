@@ -1,0 +1,43 @@
+.FACE_PALETTE{
+    width: 100%;
+    height: auto;
+    border: 0px solid red;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FACE_PALETTE>h2{
+    color: #1f1f1f;
+    font-weight: 300;
+    
+}
+
+.friends{
+    width: 90%;
+    margin: auto;
+    border: 0px solid red;
+
+}
+.friends>img{
+    width: 100%;
+}
+.eyes{
+    width: 100%;
+    height: auto;
+    border: 0px solid red;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eyes>h2{
+    color: #1f1f1f;
+    font-weight: 300;
+}
+.eyes-video{
+ width: 80%;
+ margin: auto;
+ border: 0px solid red;    
+}
+.eyes-video>iframe{
+    width: 100%;
+}
