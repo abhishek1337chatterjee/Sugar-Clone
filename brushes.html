@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dropdown.css">
+    <link rel="stylesheet" href="./crousel-1.css">
+    <link rel="stylesheet" href="./FACE PALETTE.css">
+    <link rel="stylesheet" href="./best-seller.css">
+    <link rel="stylesheet" href="./beauty-crousel.css">
+    <link rel="stylesheet" href="./read-more.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./hot-container.css">
+    <link rel="stylesheet" href="./new-launch.css">
+    <link rel="stylesheet" href="./sugar.css">
+    <link rel="stylesheet" href="./this-div.css">
+    <link rel="stylesheet" href="./explore-div.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./brushes.css">
+
+    <title >Brushes</title>
+    
+</head>
+<style>
+    .top-black{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        margin-top: -2px;
+        
+        z-index: 100;
+    }
+
+    span{
+        position: absolute;
+        top: 20%;
+        right: 3%;
+        font-size: 2rem;
+
+    }
+    .navBar{
+        background-color: rgb(243, 243, 243);
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: auto;
+        border: 0px solid red;
+        display: flex;
+        z-index: 100;
+       
+    }
+    .navBar>div:first-child{
+        display: flex;
+        width: 60%;
+        border: 0px solid red;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .navBar>div>img{
+        width: 20%;
+        height: auto;
+        margin: 0px 20px;
+        margin-top: 10px;
+    }
+    input[type="text"]{
+        width: 100%;
+        border-radius: 40px 0px 0px 40px;
+        padding-left: 20px;
+        border: 0px;
+    }
+    #search{
+        width: 30%;
+        border: 0px;
+        background-color: black;
+        color: white;
+        border-radius: 0px 40px 40px 0px;
+        font-family: sans-serif;
+    }
+    .navBar>div+div{
+        border: 0px solid red;
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .navBar>div+div>div:first-child,.navBar>div+div>div:last-child{
+        border: 0px solid blue;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        
+    }
+    .navBar>div+div>div:last-child>img,.navBar>div+div>div:last-child>p,i{
+        width: 12%;
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    a{
+        color: black;
+    }
+    .below_nav{
+        display: flex;
+        width: 100%;
+        border: 0px solid red;
+        height: auto;
+        position: fixed;
+        top: 150px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
+        z-index: 100;
+    }
+    .below_nav p{
+        margin-left: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.9rem;
+        color: rgb(60, 60, 60);
+        padding-top: 10px;
+    }
+    .below_nav p:hover{
+        color: grey;
+    }
+    
+    
+    
+</style>
+<body>
+    
+    <div class="top-black"><p>Get a BB cream and Glitter pouch on a spend of Rs.799</p><span class="closeBtn">
+        &times;</span>
+    </div>
+    <div class="navBar">
+        <div>
+            <img src="https://media.sugarcosmetics.com/upload/Logo-static.jpg" alt="logo">
+            <input type="text" placeholder="Try ''Liquid Lipstick''"><button id="search">Search</button>
+        </div>
+        <div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/person.png" alt="">
+                <a href="">Login/Register</a>
+            </div>
+            <div>
+                <p>&hearts;</p>
+                <i class="fa fa-shopping-bag"></i>
+                <img src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="below_nav">
+        <div class="dropdown">
+            <p>MAKEUP</p>
+            <div class="dropdown-content">
+                <a href="">LIPS</a>
+                <a href="">FACE</a>
+                <a href="">EYES</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <a><p>BRUSHES</p></a>
+            <div class="dropdown-content">
+                <a href="">FACE BRUSHES</a>
+                <a href="">EYE BRUSHES</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <p>SKINCARE</p>
+            <div class="dropdown-content">
+                <a href="">MOISTURIZERS</a>
+                <a href="">SUNSCREEN</a>
+                <a href="">SETTING MISTS</a>
+                <a href="">COFFEE CULTURE RANGE</a>
+                <a href="">SHEET MASK COMBO</a>
+                <a href="">CITRUS GOT REAL RANGE</a>
+                <a href="">AQUAHOLIC RANGE</a>
+                <a href="">MASKS</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <p>TREDING</p>
+            <div class="dropdown-content">
+                <a href="#">SUGAR MERCH STATION </a>
+                <a href="#">MAKEUP KITS</a>
+                <a href="#">BEST SELLERS</a>
+                <a href="">SUGAR SETS</a>
+                <a href="">VALUE SETS</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <p>BLOG</p>
+            <div class="dropdown-content">
+                <a href="">FEATURED</a>
+                <a href="">MAKEUP</a>
+                <a href="">SKINCARE</a>
+              </div>
+        </div>
+            <p>OFFERS</p>
+            <p>STORES</p>
+            </div>
+            <div class="CrouselSetup"></div>
+            <div class="brushes">
+                <img src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt="">
+                <div>
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt="">
+                </div>
+                <div class="brushes-contain">
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002" alt="">
+                        <p>Blend Trend Eyeshadow Brush - 043 Round Xl</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.8(6)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984" alt="">
+                        <p>Blend Trend Face Brush - 003 Contour</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.5(13)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639" alt="">
+                        <p>Blend Trend Dual Eyeshadow Brush - 412 Flat + Round</p>
+                        <p>Rs.599</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">5(2)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                    <div>
+                        <img id="contain" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_1.jpg?v=1630683833" alt="">
+                        <p>Blend Trend Face Brush - 006 Highlighter</p>
+                        <p>Rs.399</p>
+                        <img src="https://sugarcosmetics.com/star_filled.png" alt="">
+                        <a href="">4.7(23)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="logo">
+                    <img src="https://sugarcosmetics.com/Footer_sugar_icon.png" alt="">
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f fa-lg"></i>
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <i class="fa-brands fa-pinterest-p fa-lg"></i>
+                    <i class="fa-brands fa-tumblr fa-lg"></i>
+                    <i class="fa-brands fa-youtube fa-lg"></i>
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                    
+                </div>
+                <div class="sub-sugar">
+                    <div>
+                        <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <input type="email" placeholder="Your email address">
+                        <hr class="signoff">
+                        <button class="signup">SIGN UP</button>
+                    </div>
+                    <div>
+                        <h5 class="sugar-app">GET THE NEW SUGAR APP TODAY.</h5>
+                        <div class="sub-s">
+                            <div><p>Tap into a better shopping experience.</p></div>
+                        <div>
+                            <img src="https://sugarcosmetics.com/playstore.png" alt="">
+                            <img src="https://sugarcosmetics.com/apple-store.png" alt="">
+                        </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="info">
+                    <h5>Information</h5>
+                    <div>
+                        <p>Stores</p>
+                        <p>Terms & Conditions</p>
+                        <p>Returns</p>
+                        <p>FAQs</p>
+                        <p>About Us</p>
+                    </div>
+                </div>
+                
+                <div class="getin">
+                    <h5>GET IN TOUCH</h5>
+                </div>
+    
+                    <div class="get-data">
+                    <div>
+                        <img src="https://sugarcosmetics.com/desc-images/phone_android_white.svg" alt="">
+                       <a href="">Call us at</a>
+                       <p>1800-209-9933</p>
+                       <p>Monday to Friday : 9 AM to 7 PM</p>
+    
+                    </div>
+                    <div>
+                        <a href="">Support</a>
+                        <p>hello@sugarcosmetics.com</p>
+                    </div>
+                    <div>
+                        <a href="">Careers</a>
+                        <p>We're hiring!</p>
+                    </div>
+                    <div>
+                        <a href="">PRESS & MEDIA</a>
+                        <p>pr@sugarcosmetics.com</p>
+                    </div>
+                    <div>
+                        <a href="">INFLUENCER COLLAB</a>
+                        <p>JOIN US</p>
+                    </div>
+                </div>
+                <div class="divide">
+                    <hr class="divider">
+                </div>
+                <div class="copyright">
+                    <h6>Copyright © 2022 SUGAR Cosmetics. All rights reserved.</h6>
+                </div>
+            </div>
+    </body>
+    </html>

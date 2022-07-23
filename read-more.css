@@ -1,0 +1,10 @@
+.read-more{
+    width: 40%;
+    border: 0px solid red;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Quicksand;
+    font-size: 1rem;
+
+}

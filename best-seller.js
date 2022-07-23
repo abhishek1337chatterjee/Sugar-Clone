@@ -1,4 +1,4 @@
-    let imageLink=["https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1644399711",
+    let bestLink=["https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1644399711",
 "https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559",
 "https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149",
 "https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607",
@@ -13,60 +13,58 @@ let products = ["Kohl Of Honour Intense Kajals","Blend The Rules Eyeshadow Palet
 
 let priceLink=["₹ 249","₹ 1999","₹ 799","₹ 799","₹ 799","₹ 899","₹ 599","₹ 199"];
 
-let leftBtn=document.querySelector("#seller-btn-l");
-let rightBtn=document.getElementById("seller-btn-r");
+let bestl=document.getElementById("seller-btn-l");
+let bestr=document.getElementById("seller-btn-r");
 
-let imageState=3;
+let bestState=3;
 
 let crouselImage1=document.querySelector(".items-1>img");
 let crouselImage2=document.querySelector(".items-2>img");
 let crouselImage3=document.querySelector(".items-3>img");
 let crouselImage4=document.querySelector(".items-4>img");
 
-rightBtn.addEventListener("click",function(){
-    imageState++;
-    if(imageState==imageLink.length){
-        imageState = 0;
+bestr.addEventListener("click",function(){
+    bestState++;
+    if(bestState==bestLink.length){
+        bestState = 0;
     }
-    crouselImage1.src=imageLink[imageState];
-    imageState++;
-    if(imageState==imageLink.length){
-        imageState = 0;
+    crouselImage1.src=bestLink[bestState];
+    bestState++;
+    if(bestState==bestLink.length){
+        bestState = 0;
     }
-    crouselImage2.src=imageLink[imageState];
-    imageState++;
-    if(imageState==imageLink.length){
-        imageState = 0;
+    crouselImage2.src=bestLink[bestState];
+    bestState++;
+    if(bestState==bestLink.length){
+        bestState = 0;
     }
-    crouselImage3.src=imageLink[imageState];
-    imageState++;
-    if(imageState==imageLink.length){
-        imageState = 0;
+    crouselImage3.src=bestLink[bestState];
+    bestState++;
+    if(bestState==bestLink.length){
+        bestState = 0;
     }
-    crouselImage4.src=imageLink[imageState];
+    crouselImage4.src=bestLink[bestState];
 });
 
-leftBtn.addEventListener("click",function(){
-    imageState--;
-    if(imageState<0){
-        imageState = imageLink.length-1;
-    }else if(imageState<3){
-
-    }    
-    crouselImage1.src=imageLink[imageState];
-    imageState--;
-    if(imageState<0){
-        imageState= imageLink.length-1;
+bestl.addEventListener("click",function(){
+    bestState--;
+    if(bestState<0){
+        bestState = bestLink.length-1;  
+    }  
+    crouselImage1.src=bestLink[imageState];
+    bestState--;
+    if(bestState<0){
+        bestState= bestLink.length-1;
     };
-    crouselImage2.src=imageLink[imageState];
-    imageState--;
-    if(imageState<0){
-        imageState = imageLink.length-1;
+    crouselImage2.src=bestLink[bestState];
+    bestState--;
+    if(bestState<0){
+        bestState = bestLink.length-1;
     }
-    crouselImage3.src=imageLink[imageState];
-    imageState--;
-    if(imageState<0){
-        imageState = imageLink.length-1;
+    crouselImage3.src=bestLink[bestState];
+    bestState--;
+    if(bestState<0){
+        bestState = bestLink.length-1;
     };
-    crouselImage4.src=imageLink[imageState];
+    crouselImage4.src=bestLink[bestState];
 });

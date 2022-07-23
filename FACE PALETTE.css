@@ -21,7 +21,7 @@
 .friends>img{
     width: 100%;
 }
-.eyes{
+.eyes,.beauty-tips,.hot-deals,.new-launch,.sugar-stream,.top-picks,.gifting,.this,.just-in,.blog,.skin-care,.explore{
     width: 100%;
     height: auto;
     border: 0px solid red;   
@@ -29,7 +29,8 @@
     justify-content: center;
     align-items: center;
 }
-.eyes>h2{
+.eyes>h2,.beauty-tips>h2,.hot-deals>h2,.new-launch>h2,.sugar-stream>h2,.top-picks>h2,.gifting>h2,.this>h2,
+.just-in>h2,.blog>h2,.skin-care>h2,.explore>h2{
     color: #1f1f1f;
     font-weight: 300;
 }

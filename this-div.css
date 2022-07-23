@@ -1,0 +1,15 @@
+.this-div{
+    width: 90%;
+    height: 300px;
+    border: 0px solid red;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.this-div>div{
+    border: 0px solid aqua;
+    width: 45%;
+}
+.this-div>div img{
+    width: 100%;
+}
