@@ -1,0 +1,44 @@
+.FACE_PALETTE{
+    width: 100%;
+    height: auto;
+    border: 0px solid red;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FACE_PALETTE>h2{
+    color: #1f1f1f;
+    font-weight: 300;
+    
+}
+
+.friends{
+    width: 90%;
+    margin: auto;
+    border: 0px solid red;
+
+}
+.friends>img{
+    width: 100%;
+}
+.eyes,.beauty-tips,.hot-deals,.new-launch,.sugar-stream,.top-picks,.gifting,.this,.just-in,.blog,.skin-care,.explore{
+    width: 100%;
+    height: auto;
+    border: 0px solid red;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eyes>h2,.beauty-tips>h2,.hot-deals>h2,.new-launch>h2,.sugar-stream>h2,.top-picks>h2,.gifting>h2,.this>h2,
+.just-in>h2,.blog>h2,.skin-care>h2,.explore>h2{
+    color: #1f1f1f;
+    font-weight: 300;
+}
+.eyes-video{
+ width: 80%;
+ margin: auto;
+ border: 0px solid red;    
+}
+.eyes-video>iframe{
+    width: 100%;
+}

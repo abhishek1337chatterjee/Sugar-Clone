@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Neutra-Display-Titling;
+    src: url(./Neutra\ Display\ Titling/Neutra-Display-Titling.otf) 
+}
+#best-seller-1{
+    width: 100%;
+    height: auto;
+    border: 0px solid red;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#best-seller-1>h3{
+    color: #1f1f1f;
+    font-weight: 500;
+}
+#seller-cart{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 400px;
+    gap: 40px;
+    width: 75%;
+    margin: auto;
+    border: 0px solid red; 
+    position: relative;   
+    margin-bottom: 20px;
+}
+#seller-cart>div{
+    border: 0px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.items-1,.items-2,.items-3,.items-4{
+    width: 100%;
+    height: auto;
+    border:0px solid red;
+    text-align: center;
+}
+.items-1>img,.items-2>img,.items-3>img,.items-4>img{
+    width: 85%;
+    height: auto;
+    
+}
+.headingPrice-1,.headingPrice-2,.headingPrice-3,.headingPrice-4{
+    width: 100%;
+    height: 20%;
+    border: 0px solid aqua;
+    padding-bottom: 10px;
+}
+/* .headingPrice-1>div{
+    width: 100%;
+    height: 18%;
+    border:2px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.headingPrice-1>div>p,.headingPrice-2>div>p,.headingPrice-3>div>p,.headingPrice-4>div>p{
+    font-size: auto;
+    text-align: center;
+    
+}
+#seller-cart>div>button{
+    border: 0px solid red;
+}
+.headingPrice-1>p,.headingPrice-2>p,.headingPrice-3>p,.headingPrice-4>p{
+    font-family: Neutra-Display-Titling;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.item-btn-1,.item-btn-2,.item-btn-3,.item-btn-4{
+    width: 100%;
+    height:12%;
+    background-color: #212529;  
+    color: #fff;
+    font-family: sans-serif;  
+}
+#seller-cart>button{
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: rgba(100,100,100,0.5);
+    width:80px;
+    height:80px;
+    line-height:80px;
+    border-radius: 50%;
+   
+}
+#seller-cart>div+button{
+    left: -100px;
+}
+#seller-cart>button+button{
+    right: -100px;
+}

@@ -1,0 +1,61 @@
+.brushes{
+    width: 100%;
+    margin: auto;
+    border: 0px solid red;
+}
+.brushes>img{
+    width: 95%;
+    filter: blur(20px);
+    position: absolute;
+    z-index: -1;
+    border: 2px solid blue;
+}
+.brushes>div{
+    text-align: center;
+}
+.brushes>div>img{
+    width: 90%;
+    height: 350px;
+}
+
+.brushes-contain{
+    display: grid;
+    width: 80%;
+    margin: 80px auto 60px auto;
+    
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    
+}
+.brushes-contain>div{
+    border: 0px solid red;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.brushes-contain>div:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#contain{
+    width: 90%;
+}
+.brushes-contain>div>img+p{
+    font-family: Neutra-Display-Titling;
+    text-align: center;
+    font-size: 0.9rem;
+    color: grey;
+}
+.brushes-contain>div>p+p{
+    line-height: 1px;
+    font-family: sans-serif;
+    color: #212529;
+    opacity: 2px;
+
+}
+.brushes-contain>div>p+img{
+    width: 10%;
+}
+.brushes-contain>div>img+a{
+    text-decoration: none;
+    
+}

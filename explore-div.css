@@ -1,0 +1,13 @@
+.explore-div{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px
+}
+.explore-div>div{
+    border: 0px solid red;
+}
+.explore-div>div>img{
+    width: 100%;
+}
